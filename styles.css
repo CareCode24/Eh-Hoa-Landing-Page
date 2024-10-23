@@ -22,8 +22,10 @@ body {
 }
 
 .eh-hoa-title {
-    max-width: 600px;
-    width: 100%;
+    font-family: 'HudsonNY-serif', serif;
+    font-size: 150px;
+    color: #FAFEFE;
+    text-shadow: 20px 17px 0 #581229;
 }
 
 .content-section {
@@ -40,7 +42,6 @@ body {
     box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1);
     position: relative;
 }
-
 
 .auntie-image {
     flex: 1;
@@ -68,10 +69,7 @@ body {
 .footer {
     text-align: center;
     margin-top: 20px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 20px;
     font-size: 16px;
     color: rgba(64, 0, 0, 0.42);
     font-family: 'Marker Felt', sans-serif;
