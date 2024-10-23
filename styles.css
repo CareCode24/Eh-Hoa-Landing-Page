@@ -2,23 +2,68 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F2E6D9;
-    font-family: Arial, sans-serif;
+    background-color: #F3EDE2;
 }
 
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    justify-content: center;
 }
 
-.content-box {
-    background-color: #E0CCB6;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    max-width: 800px;
-    width: 100%;
+.title-section {
     position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.eh-hoa-title {
+    max-width: 600px;
+    width: 100%;
+}
+
+.content-section {
+    background-color: #DED3C2;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auntie-image {
+    flex: 1;
+    text-align: right;
+}
+
+.auntie {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.social-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
 }
