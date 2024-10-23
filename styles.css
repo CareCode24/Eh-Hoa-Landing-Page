@@ -22,7 +22,7 @@ body {
     max-width: 800px;
     width: 100%;
     margin-bottom: 30px;
-    box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.075);
     position: relative;
 }
 
