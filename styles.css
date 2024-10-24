@@ -22,7 +22,7 @@ body {
 }
 
 .eh-hoa-title {
-    font-family: serif; /* Temporary to check visibility */
+    font-family: 'HudsonNY-serif', serif;
     font-size: 150px;
     color: #FAFEFE;
     text-shadow: 20px 17px 0 #581229;
