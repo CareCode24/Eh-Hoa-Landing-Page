@@ -38,9 +38,9 @@ body {
 
 .eh-hoa-title {
     font-family: 'Black Ops One', cursive;
-    font-size: clamp(60px, 10vw, 150px);
+    font-size: 150px;
     color: #FAFEFE;
-    text-shadow: 0.375px 0.375px #581229;
+    text-shadow: 10px 10px #581229;
     margin: 0;
     position: relative;
     top: 0;
@@ -68,9 +68,8 @@ body {
     position: relative;
     z-index: 1;
     margin-left: auto;
-    margin-bottom: -50px;
+    margin-bottom: 0;
     bottom: 0;
-    transform: translateY(50px);
 }
 
 .social-section {
@@ -100,7 +99,7 @@ body {
         font-size: 12px;
     }
     .eh-hoa-title {
-        font-size: 80px;
+        font-size: 100px;
     }
     .auntie {
         max-width: 200px;
