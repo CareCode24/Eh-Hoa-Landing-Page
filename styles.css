@@ -38,12 +38,13 @@ body {
 
 .eh-hoa-title {
     font-family: 'Cinzel', serif;
-    font-size: 150px;
+    font-size: clamp(60px, 10vw, 150px);
     color: #FAFEFE;
     text-shadow: 10px 10px #581229;
     margin: 0;
     position: relative;
     top: 0;
+    white-space: nowrap;
 }
 
 .description-text {
@@ -96,7 +97,7 @@ body {
         font-size: 12px;
     }
     .eh-hoa-title {
-        font-size: 100px;
+        font-size: 80px;
     }
     .auntie {
         max-width: 200px;
