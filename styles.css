@@ -40,7 +40,7 @@ body {
     font-family: 'Black Ops One', cursive;
     font-size: clamp(60px, 10vw, 150px);
     color: #FAFEFE;
-    text-shadow: 1.25px 1.25px #581229;
+    text-shadow: 0.375px 0.375px #581229;
     margin: 0;
     position: relative;
     top: 0;
@@ -68,8 +68,9 @@ body {
     position: relative;
     z-index: 1;
     margin-left: auto;
-    margin-bottom: 0;
+    margin-bottom: -50px;
     bottom: 0;
+    transform: translateY(50px);
 }
 
 .social-section {
