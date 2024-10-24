@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F2E6D9;
+    background-color: #F2E6D9; /* Corrected background color */
 }
 
 .container {
@@ -30,8 +30,8 @@ body {
 .title-section {
     text-align: center;
     position: relative;
-    margin-top: 0;
-    padding-top: 40px;
+    margin: 0;
+    padding-top: 0; /* Removed the extra margin and padding to align correctly */
 }
 
 .eh-hoa-title {
@@ -40,6 +40,8 @@ body {
     color: #FAFEFE;
     text-shadow: 10px 10px #581229;
     margin: 0;
+    position: relative;
+    top: -20px; /* Adjusted to align it with the content box */
 }
 
 .auntie-image {
