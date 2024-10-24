@@ -22,7 +22,7 @@ body {
 }
 
 .eh-hoa-title {
-    font-family: 'HudsonNY-serif', serif;
+    font-family: 'HudsonNY', serif;
     font-size: 150px;
     color: #FAFEFE;
     text-shadow: 20px 17px 0 #581229;
@@ -72,6 +72,15 @@ body {
     color: rgba(64, 0, 0, 0.42);
     font-family: 'Marker Felt', sans-serif;
     font-weight: 300;
+}
+
+@font-face {
+    font-family: 'HudsonNY';
+    src: url('fonts/HudsonNY.woff2') format('woff2'),
+         url('fonts/HudsonNY.woff') format('woff'),
+         url('fonts/HudsonNY.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media (max-width: 600px) {
