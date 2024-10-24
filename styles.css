@@ -27,13 +27,15 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    padding-left: 40px; /* Adjust padding to move content closer to the edges */
+    padding-right: 40px;
 }
 
 .title-section {
     text-align: left;
     position: relative;
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 0;
+    padding: 20px 0 0 0;
     width: 60%;
 }
 
@@ -44,14 +46,14 @@ body {
     text-shadow: 10px 10px #581229;
     margin: 0;
     position: relative;
-    top: 0;
+    top: -10px; /* Adjust top positioning to bring the title closer to the top */
 }
 
 .description-text {
     font-family: 'Marker Felt', sans-serif;
     font-size: 25px;
     color: #400000;
-    margin: 20px;
+    margin: 20px 0;
     max-width: 100%;
     line-height: 1.5;
     text-align: left;
@@ -67,6 +69,7 @@ body {
     align-self: flex-end;
     position: relative;
     z-index: 1;
+    margin-left: auto; /* Align the auntie image to the right */
 }
 
 .social-section {
