@@ -24,10 +24,6 @@ body {
     margin-bottom: 30px;
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.15);
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
 .title-section {
@@ -53,18 +49,18 @@ body {
     font-size: 25px;
     color: #400000;
     margin-top: 20px;
-    flex: 1;
-    text-align: left;
     max-width: 60%;
     line-height: 1.5;
+    text-align: left;
 }
 
 .auntie-image {
-    position: relative;
-    align-self: flex-end;
     max-width: 300px;
     width: 30%;
     margin-bottom: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .social-section {
@@ -101,10 +97,12 @@ body {
     }
     .content-section {
         padding: 20px;
-        flex-direction: column;
     }
     .description-text {
-        text-align: left;
         font-size: 18px;
+    }
+    .auntie-image {
+        position: static;
+        align-self: center;
     }
 }
