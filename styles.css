@@ -37,7 +37,7 @@ body {
 }
 
 .eh-hoa-title {
-    font-family: 'Arvo', serif;
+    font-family: 'Black Ops One', cursive;
     font-size: clamp(60px, 10vw, 150px);
     color: #FAFEFE;
     text-shadow: 10px 10px #581229;
