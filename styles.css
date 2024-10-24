@@ -24,21 +24,22 @@ body {
     margin-bottom: 30px;
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.15);
     position: relative;
+    text-align: center;
 }
 
 .title-section {
     text-align: center;
     position: relative;
-    margin-top: 20px;
+    margin-top: 0;
+    padding-top: 40px;
 }
 
 .eh-hoa-title {
     font-family: 'HudsonNY-Serif', serif;
     font-size: 150px;
     color: #FAFEFE;
-    text-shadow: 20px 20px #581229;
-    position: relative;
-    top: 20px;
+    text-shadow: 10px 10px #581229;
+    margin: 0;
 }
 
 .auntie-image {
