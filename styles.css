@@ -25,15 +25,15 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .title-section {
     text-align: left;
     position: relative;
     margin-top: 0;
-    padding: 20px 0 0 0;
-    width: 50%;
+    width: 60%;
 }
 
 .eh-hoa-title {
@@ -51,7 +51,7 @@ body {
     font-size: 25px;
     color: #400000;
     margin: 20px 0;
-    width: 50%;
+    width: 60%;
     line-height: 1.5;
     text-align: left;
     position: relative;
@@ -62,7 +62,7 @@ body {
 .auntie-image {
     max-width: 300px;
     width: 30%;
-    margin-bottom: 20px;
+    margin-top: 20px;
     align-self: flex-end;
     position: relative;
     z-index: 1;
