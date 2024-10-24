@@ -40,21 +40,16 @@ body {
     color: #FAFEFE;
     text-shadow: 10px 10px #581229;
     margin: 0;
-    position: relative;
-    top: -10px;
 }
 
 .auntie-image {
-    flex: 1;
-    text-align: right;
-    position: relative;
-    bottom: -30px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .auntie {
     max-width: 300px;
     width: 100%;
-    border-radius: 15px;
 }
 
 .social-section {
@@ -82,13 +77,5 @@ body {
 @media (max-width: 600px) {
     .footer {
         font-size: 12px;
-    }
-
-    .eh-hoa-title {
-        font-size: 100px;
-    }
-
-    .auntie {
-        max-width: 200px;
     }
 }
