@@ -28,6 +28,7 @@ body {
     gap: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    position: relative;
 }
 
 .title-section {
@@ -60,12 +61,12 @@ body {
 
 .cta-button {
     appearance: button;
-    background-color: #581229; /* Darker maroon shade from the website */
+    background-color: #581229;
     border: solid transparent;
     border-radius: 16px;
     border-width: 0 0 4px;
     box-sizing: border-box;
-    color: #FAFEFE; /* Light text color */
+    color: #FAFEFE;
     cursor: pointer;
     display: inline-block;
     font-family: 'Cinzel', sans-serif;
@@ -73,7 +74,7 @@ body {
     font-weight: 700;
     letter-spacing: .8px;
     line-height: 20px;
-    margin: 20px auto; /* Center align button */
+    margin: 20px auto;
     outline: none;
     overflow: visible;
     padding: 13px 16px;
@@ -83,64 +84,42 @@ body {
     transform: translateZ(0);
     transition: filter .2s;
     user-select: none;
-    -webkit-user-select: none;
     vertical-align: middle;
     white-space: nowrap;
     width: fit-content;
     position: relative;
 }
 
-.cta-button:after {
-    background-clip: padding-box;
-    background-color: #400000; /* Slightly darker maroon for shadow effect */
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    bottom: -4px;
-    content: "";
-    left: 0;
+.question-icon {
     position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
+    top: 20px;
+    right: 20px;
 }
 
-.cta-button:hover:not(:disabled) {
-    filter: brightness(1.1);
-    -webkit-filter: brightness(1.1);
+.question-mark {
+    width: 30px;
+    cursor: pointer;
 }
 
-.cta-button:disabled {
-    cursor: auto;
-}
-
-.cta-button:active {
-    border-width: 4px 0 0;
-    background: none;
-}
-
-.auntie-image {
-    flex: 0 1 30%; /* Constrained width */
-    max-width: 260px; /* Ensure smaller max width */
-    align-self: flex-start; /* Align image to the top */
-    padding-left: 20px;
-}
-
-.auntie-image img {
-    width: 100%;
+.social-box {
+    background-color: #581229; /* Dark background */
+    padding: 15px;
     border-radius: 10px;
+    text-align: center;
+    color: #FAFEFE;
+    margin-top: 30px;
 }
 
 .social-section {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 20px 0; /* Reduce space between content and icons */
+    gap: 15px;
+    margin-top: 10px;
 }
 
 .social-icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .footer {
@@ -149,7 +128,7 @@ body {
     color: rgba(64, 0, 0, 0.42);
     font-family: 'Marker Felt', sans-serif;
     padding: 10px 0;
-    margin-top: 10px; /* Adjusted margin */
+    margin-top: 20px;
 }
 
 @media (max-width: 800px) {
@@ -190,12 +169,11 @@ body {
     }
 
     .social-icon {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
 
     .footer {
         font-size: 12px;
     }
 }
-
