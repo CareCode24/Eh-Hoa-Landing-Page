@@ -24,18 +24,16 @@ body {
     margin-bottom: 30px;
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.15);
     position: relative;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .title-section {
-    text-align: center;
     position: relative;
-    margin-top: 0;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .eh-hoa-title {
@@ -44,22 +42,18 @@ body {
     color: #FAFEFE;
     text-shadow: 10px 10px #581229;
     margin: 0;
-    position: relative;
-    top: 0;
 }
 
 .description-text {
     font-family: 'Marker Felt', sans-serif;
     font-size: 30px;
     color: #400000;
-    opacity: 1;
     margin-top: 20px;
 }
 
 .auntie-image {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    align-self: flex-end;
+    margin-top: 20px;
 }
 
 .auntie {
