@@ -32,7 +32,8 @@ body {
 
 .title-section {
     flex: 1;
-    max-width: 50%; /* Prevents stretching */
+    max-width: 55%; /* Prevents stretching */
+    padding-right: 20px; /* Add more space between text and image */
 }
 
 .eh-hoa-title {
@@ -72,8 +73,8 @@ body {
 }
 
 .auntie-image {
-    flex: 0 1 40%; /* Prevents from expanding too much */
-    max-width: 300px; /* Ensures a consistent size */
+    flex: 0 1 30%; /* Constrain the image's space */
+    max-width: 280px; /* Limit size to prevent overlap */
     padding-left: 20px;
 }
 
