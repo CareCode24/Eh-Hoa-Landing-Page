@@ -15,6 +15,21 @@ body {
     justify-content: center;
 }
 
+.title-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.eh-hoa-title {
+    font-family: 'HudsonNY-serif', serif;
+    font-size: 150px;
+    color: #FAFEFE;
+    text-shadow: 20px 17px 0 #581229;
+    z-index: 10;
+    position: relative;
+}
+
 .content-section {
     background-color: #DED3C2;
     padding: 40px;
