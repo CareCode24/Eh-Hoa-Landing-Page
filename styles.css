@@ -119,6 +119,17 @@ body {
     margin-top: 20px;
 }
 
+.question-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: #581229; /* Matches the title color */
+    cursor: pointer;
+    text-shadow: 2px 2px #FAFEFE; /* Same shadow effect as the title */
+}
+
 @media (max-width: 800px) {
     .content-section {
         flex-direction: column;
