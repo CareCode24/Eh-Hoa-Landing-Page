@@ -32,7 +32,7 @@ body {
 
 .title-section {
     flex: 1;
-    max-width: 55%;
+    max-width: 50%; /* Prevents stretching */
 }
 
 .eh-hoa-title {
@@ -72,8 +72,8 @@ body {
 }
 
 .auntie-image {
-    flex: 0.45;
-    max-width: 45%;
+    flex: 0 1 40%; /* Prevents from expanding too much */
+    max-width: 300px; /* Ensures a consistent size */
     padding-left: 20px;
 }
 
