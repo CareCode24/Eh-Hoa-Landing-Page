@@ -55,6 +55,8 @@ body {
     max-width: 60%;
     line-height: 1.5;
     text-align: left;
+    position: relative;
+    z-index: 2;
 }
 
 .auntie-image {
@@ -62,6 +64,8 @@ body {
     width: 30%;
     margin-bottom: 20px;
     align-self: flex-end;
+    position: relative;
+    z-index: 1;
 }
 
 .social-section {
