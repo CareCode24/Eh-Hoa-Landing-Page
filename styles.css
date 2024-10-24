@@ -9,7 +9,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,8 +20,8 @@ body {
     background-color: #DED3C2;
     border-radius: 30px;
     width: 90%;
-    max-width: 1000px;
-    padding: 30px 40px;
+    max-width: 900px;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,8 +32,8 @@ body {
 
 .title-section {
     flex: 1;
-    max-width: 50%; /* Adjusted for balance */
-    padding-right: 30px; /* More space between text and image */
+    max-width: 45%; /* Reduced width for better spacing */
+    padding-right: 30px;
 }
 
 .eh-hoa-title {
@@ -59,22 +59,75 @@ body {
 }
 
 .cta-button {
-    display: block;
-    padding: 10px 20px;
-    background-color: #581229;
-    color: #FAFEFE;
-    border: 2px solid #400000;
-    border-radius: 10px;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 20px;
+    appearance: button;
+    background-color: #581229; /* Darker maroon shade from the website */
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FAFEFE; /* Light text color */
     cursor: pointer;
+    display: inline-block;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
     width: fit-content;
+    position: relative;
+}
+
+.cta-button:after {
+    background-clip: padding-box;
+    background-color: #400000; /* Slightly darker maroon for shadow effect */
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.cta-button,
+.cta-button:focus {
+    user-select: auto;
+}
+
+.cta-button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.cta-button:disabled {
+    cursor: auto;
+}
+
+.cta-button:active {
+    border-width: 4px 0 0;
+    background: none;
 }
 
 .auntie-image {
-    flex: 0 1 35%; /* Ensure more consistent size */
-    max-width: 300px;
+    flex: 0 1 30%; /* Constrained width */
+    max-width: 260px; /* Ensure smaller max width */
+    align-self: flex-start; /* Align image to the top */
     padding-left: 20px;
 }
 
@@ -87,7 +140,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 30px 0; /* More space from content */
+    margin: 40px 0; /* More space from the content */
 }
 
 .social-icon {
