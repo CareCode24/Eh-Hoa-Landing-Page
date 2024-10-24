@@ -15,21 +15,6 @@ body {
     justify-content: center;
 }
 
-.title-section {
-    position: relative;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.eh-hoa-title {
-    font-family: 'HudsonNY', serif;
-    font-size: 150px;
-    color: #FAFEFE;
-    text-shadow: 20px 17px 0 #581229;
-    z-index: 10;
-    position: relative;
-}
-
 .content-section {
     background-color: #DED3C2;
     padding: 40px;
@@ -39,6 +24,19 @@ body {
     margin-bottom: 30px;
     box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.075);
     position: relative;
+}
+
+.title-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.eh-hoa-title {
+    font-family: 'HudsonNY-serif', sans-serif;
+    font-size: 150px;
+    color: #FAFEFE;
+    text-shadow: 2px 2px 2px #581229; /* Reduced the shadow to make it less intense */
+    margin: 0;
 }
 
 .auntie-image {
@@ -72,15 +70,6 @@ body {
     color: rgba(64, 0, 0, 0.42);
     font-family: 'Marker Felt', sans-serif;
     font-weight: 300;
-}
-
-@font-face {
-    font-family: 'HudsonNY';
-    src: url('fonts/HudsonNY.woff2') format('woff2'),
-         url('fonts/HudsonNY.woff') format('woff'),
-         url('fonts/HudsonNY.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @media (max-width: 600px) {
