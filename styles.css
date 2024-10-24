@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #F2E6D9;
+    font-family: 'Cinzel', serif;
 }
 
 .container {
@@ -22,53 +23,38 @@ body {
     width: 100%;
     margin-bottom: 30px;
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.15);
-    position: relative;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 20px;
+    gap: 20px;
 }
 
 .title-section {
-    text-align: left;
-    position: relative;
-    margin-top: 0;
     width: 60%;
 }
 
 .eh-hoa-title {
-    font-family: 'HudsonNY-Serif', serif;
+    font-family: 'Cinzel', serif;
     font-size: 150px;
     color: #FAFEFE;
-    text-shadow: 10px 10px #581229;
+    text-shadow: 5px 5px #581229;
     margin: 0;
-    position: relative;
-    top: 0;
     white-space: nowrap;
 }
 
 .description-text {
     font-family: 'Marker Felt', sans-serif;
-    font-size: 25px;
+    font-size: 22px;
     color: #400000;
-    margin: 20px 0;
-    width: 60%;
+    margin-top: 20px;
     line-height: 1.5;
-    text-align: left;
-    position: relative;
-    z-index: 2;
-    align-self: flex-start;
 }
 
-.auntie-image {
-    max-width: 300px;
-    width: 30%;
-    margin-top: auto;
-    align-self: flex-end;
-    position: absolute;
-    z-index: 1;
-    margin-left: auto;
-    bottom: -5px;
+.auntie-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .social-section {
@@ -85,37 +71,30 @@ body {
 
 .footer {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
     font-size: 16px;
     color: rgba(64, 0, 0, 0.42);
     font-family: 'Marker Felt', sans-serif;
-    font-weight: 300;
 }
 
 @media (max-width: 600px) {
-    .footer {
-        font-size: 12px;
-    }
     .eh-hoa-title {
         font-size: 100px;
+        text-align: center;
     }
-    .auntie {
-        max-width: 200px;
-    }
-    .content-section {
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;
-    }
+
     .description-text {
         font-size: 18px;
         text-align: center;
         max-width: 100%;
     }
+
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
     .auntie-image {
-        position: static;
-        align-self: center;
         margin-top: 20px;
     }
 }
