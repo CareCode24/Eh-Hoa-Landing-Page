@@ -73,11 +73,18 @@ body {
     border: none;
     font-family: 'Marker Felt', sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: clamp(12px, 2.5vw, 16px); /* Adjusts between 12px and 16px based on viewport size */
     cursor: pointer;
     text-transform: uppercase;
     display: block;
     margin-top: 20px;
+    transition: font-size 0.3s ease; /* Smooth resizing */
+}
+
+@media (max-width: 600px) {
+    .button-19 {
+        padding: 8px 15px; /* Adjust padding for smaller screens */
+    }
 }
 
 .info-text {
