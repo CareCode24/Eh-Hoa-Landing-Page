@@ -6,7 +6,9 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .header {
@@ -14,6 +16,8 @@ body {
     background-color: #D7C9B6;
     padding: 20px;
     border-radius: 20px;
+    flex: 1;
+    margin-right: 10px;
 }
 
 .title {
@@ -57,6 +61,7 @@ body {
     user-select: none;
     vertical-align: middle;
     white-space: nowrap;
+    margin-bottom: 10px;
 }
 
 .button-19:hover:not(:disabled) {
@@ -73,16 +78,36 @@ body {
     margin-top: 10px;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .social-icons img {
     width: 24px;
     margin: 5px;
     display: inline-block;
 }
 
+.character {
+    flex: 0 1 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.character img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .help-icon {
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 10px;
     font-size: 28px;
     color: #5A1A1A;
 }
@@ -94,7 +119,15 @@ footer {
     color: #5A1A1A;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header {
+        margin-right: 0;
+        text-align: center;
+    }
     .title {
         font-size: 36px;
     }
@@ -104,5 +137,8 @@ footer {
     .button-19 {
         padding: 10px 14px;
         font-size: 12px;
+    }
+    .character {
+        margin-top: 20px;
     }
 }
