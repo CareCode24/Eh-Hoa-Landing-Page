@@ -66,26 +66,68 @@ body {
 }
 
 .button-19 {
+    appearance: button;
     background-color: #5A1A1A;
     color: #F9FEFE;
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: none;
-    font-family: 'Marker Felt', sans-serif;
-    font-weight: bold;
-    font-size: clamp(12px, 2.5vw, 16px); /* Adjusts between 12px and 16px based on viewport size */
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
     cursor: pointer;
+    display: inline-block;
+    font-family: 'Marker Felt', sans-serif;
+    font-weight: 700;
+    font-size: clamp(12px, 1.5vw, 16px); /* Adjusts font size */
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 16px;
+    text-align: center;
     text-transform: uppercase;
-    display: block;
-    margin-top: 20px;
-    transition: font-size 0.3s ease; /* Smooth resizing */
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s, font-size .2s;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.button-19:after {
+    background-clip: padding-box;
+    background-color: #7A2D2D; /* Slightly lighter color for the bottom */
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.button-19:disabled {
+    cursor: auto;
+}
+
+.button-19:active {
+    border-width: 4px 0 0;
+    background: none;
 }
 
 @media (max-width: 600px) {
     .button-19 {
-        padding: 8px 15px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Ensure readability on smaller screens */
+        padding: 10px 14px; /* Adjust padding for smaller devices */
     }
 }
+
 
 .info-text {
     font-size: 16px;
